@@ -1,0 +1,67 @@
+Add Component: Footprint Not Found SOIC127P600X170-8N
+Add Component: Footprint Not Found BUK6Y2440PX
+Add Component: Footprint Not Found BUK6Y2440PX
+Add Component: Footprint Not Found SOT230P700X180-4N
+Add Component: Footprint Not Found SOT230P700X180-4N
+Add Component: Footprint Not Found BUK6Y2440PX
+Add Component: Footprint Not Found BUK6Y2440PX
+Add Component: Footprint Not Found SOT230P700X180-4N
+Add Component: Footprint Not Found BUK6Y2440PX
+Add Component: Footprint Not Found SOT230P700X180-4N
+Add Component: Footprint Not Found SON50P200X200X80-9N
+Add Component: Footprint Not Found DIP16-2.54-19.2X7.62MM
+Added Net: Name=GND
+Added Net: Name=Net*1_1
+Added Net: Name=Net*1_2
+Added Net: Name=Net*1_3
+Added Net: Name=Net*1_4
+Added Net: Name=Net*_2
+Added Net: Name=Net*_12
+Added Net: Name=Net*_15
+Added Net: Name=Net*_19
+Added Net: Name=Net*_21
+Added Net: Name=Net*_23
+Added Net: Name=Net*_26
+Added Net: Name=Net*_29
+Added Net: Name=Net*_31
+Added Net: Name=NetB1_1
+Added Net: Name=NetB1_3
+Added Net: Name=NetB1_4
+Added Net: Name=NetB1_5
+Added Net: Name=NetB1_6
+Added Net: Name=NetB1_8
+Added Net: Name=NetC1_1
+Added Net: Name=NetC3_1
+Added Net: Name=NetC3_2
+Added Net: Name=NetC3_3
+Added Net: Name=NetC10_2
+Added Net: Name=NetC11_1
+Added Net: Name=NetC11_2
+Added Net: Name=NetC12_2
+Added Net: Name=NetC13_1
+Added Net: Name=NetC14_1
+Added Net: Name=NetQ1_4
+Added Net: Name=NetQ2_1
+Added Net: Name=NetQ2_4
+Added Net: Name=NetQ2_5
+Added Net: Name=NetQ3_1
+Added Net: Name=NetQ4_2
+Added Net: Name=NetQ6_4
+Added Net: Name=NetQ8_4
+Added Net: Name=NetR15_1
+Added Net: Name=NetR17_1
+Added Net: Name=NetR19_1
+Added Net: Name=NetU_5
+Added Net: Name=VCC3V3
+Added Net: Name=VCC5V0
+Added Net: Name=VCC15V0
+Added Class: Name=ADC Module
+Added Class: Name=BMS
+Added Class: Name=Jetson Nano Connector
+Added Class: Name=Power Supply
+Added Class: Name=Status Light Control
+Added Room: Name=ADC Module
+Added Room: Name=BMS
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control

@@ -1,0 +1,15 @@
+Added Component: Designator=J7(4 Pin 0.1in Header)
+Added Pin To Net: NetName=NetJ7_1 Pin=J7-1
+Added Pin To Net: NetName=NetJ7_2 Pin=J7-2
+Added Pin To Net: NetName=NetJ7_3 Pin=J7-3
+Added Pin To Net: NetName=GND Pin=J7-4
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Added Member To Class: ClassName=Status Light Control Member=Component J7 LED Connector
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened
+Added Room: Name=ADC Module
+Added Room: Name=Ballast Motor Control
+Added Room: Name=BMS
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control

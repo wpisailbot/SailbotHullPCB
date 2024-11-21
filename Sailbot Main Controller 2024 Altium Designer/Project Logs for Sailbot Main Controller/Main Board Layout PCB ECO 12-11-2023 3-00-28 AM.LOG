@@ -1,0 +1,30 @@
+Added Component: Designator=J2(Jetson Nano Header)
+Added Pin To Net: NetName=VCC3V3 Pin=J2-1
+Added Pin To Net: NetName=VCC5V0 Pin=J2-2
+Added Pin To Net: NetName=VCC5V0 Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J2-6
+Added Pin To Net: NetName=GND Pin=J2-9
+Added Pin To Net: NetName=NetJ2_12 Pin=J2-12
+Added Pin To Net: NetName=GND Pin=J2-14
+Added Pin To Net: NetName=NetJ2_15 Pin=J2-15
+Added Pin To Net: NetName=NetB3_11 Pin=J2-19
+Added Pin To Net: NetName=GND Pin=J2-20
+Added Pin To Net: NetName=NetB3_12 Pin=J2-21
+Added Pin To Net: NetName=NetB3_13 Pin=J2-23
+Added Pin To Net: NetName=GND Pin=J2-25
+Added Pin To Net: NetName=NetB3_10 Pin=J2-26
+Added Pin To Net: NetName=NetJ2_29 Pin=J2-29
+Added Pin To Net: NetName=GND Pin=J2-30
+Added Pin To Net: NetName=NetJ2_31 Pin=J2-31
+Added Pin To Net: NetName=Net*_1 Pin=J2-33
+Added Pin To Net: NetName=GND Pin=J2-34
+Added Pin To Net: NetName=GND Pin=J2-39
+Add Pin To Net: Unknown Pin: Pin J7-1
+Add Pin To Net: Unknown Pin: Pin J7-2
+Add Pin To Net: Unknown Pin: Pin J7-3
+Add Pin To Net: Unknown Pin: Pin J7-4
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Added Member To Class: ClassName=Jetson Nano Connector Member=Component J2 Jetson Nano Connector
+Add Class Member: Failed to add class member : Component J7 LED Connector
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened

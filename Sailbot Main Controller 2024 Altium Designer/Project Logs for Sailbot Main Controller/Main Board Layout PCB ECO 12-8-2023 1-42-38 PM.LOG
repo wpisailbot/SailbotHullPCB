@@ -1,0 +1,116 @@
+Removed Pin From Net: NetName=NetC1_1 Pin=C1-1
+Removed Pin From Net: NetName=NetC1_2 Pin=C1-2
+Removed Member From Class: ClassName=Status Light Control Member=C3
+Added Component: Designator=*(3 Pin 0.1in Header)
+Add Component: Footprint Not Found SOIC127P600X170-8N
+Add Component: Footprint Not Found SOT95P230X110-3N
+Added Component: Designator=Q?(BUK6Y2440PX)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://assets.nexperia.com/documents/data-sheet/BUK6Y24-40P.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "1.2mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Nexperia"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BUK6Y24-40PX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "771-BUK6Y24-40PX"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Nexperia/BUK6Y24-40PX?qs=vmHwEFxEFR8tyd2WwTEwBg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=R?(6-0805_M)
+Add component (AddParameter): Name = "DTEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SimulationGenericComponent"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "T_REL_LOCAL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC2"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found DIP16-2.54-19.2X7.62MM
+Add Component: Footprint Not Found SOIC127P600X175-14N
+Add Component: Footprint Not Found WSHP28184L000FEA
+Add Pin To Net: Unknown Pin: Pin *1-1
+Add Pin To Net: Unknown Pin: Pin *1-2
+Add Pin To Net: Unknown Pin: Pin *1-3
+Add Pin To Net: Unknown Pin: Pin *1-4
+Add Pin To Net: Unknown Pin: Pin *1-5
+Added Pin To Net: NetName=VCC5V0 Pin=*-2
+Added Pin To Net: NetName=GND Pin=*-3
+Add Pin To Net: Unknown Pin: Pin B1-1
+Add Pin To Net: Unknown Pin: Pin B1-2
+Add Pin To Net: Unknown Pin: Pin B1-3
+Add Pin To Net: Unknown Pin: Pin B1-4
+Add Pin To Net: Unknown Pin: Pin B1-5
+Add Pin To Net: Unknown Pin: Pin B1-6
+Add Pin To Net: Unknown Pin: Pin B1-7
+Add Pin To Net: Unknown Pin: Pin B1-8
+Added Pin To Net: NetName=NetB1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetB1_8 Pin=C1-2
+Added Pin To Net: NetName=NetC1_2 Pin=C1-2
+Add Pin To Net: Unknown Pin: Pin D2-1
+Add Pin To Net: Unknown Pin: Pin D2-2
+Add Pin To Net: Unknown Pin: Pin J7-1
+Add Pin To Net: Unknown Pin: Pin J7-2
+Add Pin To Net: Unknown Pin: Pin J7-3
+Add Pin To Net: Unknown Pin: Pin J7-4
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin Q8-1
+Add Pin To Net: Unknown Pin: Pin Q8-2
+Add Pin To Net: Unknown Pin: Pin Q8-3
+Added Pin To Net: NetName=NetC1_1 Pin=Q?-1
+Added Pin To Net: NetName=NetC1_1 Pin=Q?-2
+Added Pin To Net: NetName=NetC1_1 Pin=Q?-3
+Added Pin To Net: NetName=VCC15V0 Pin=Q?-5
+Added Pin To Net: NetName=VCC15V0 Pin=Q?-6
+Added Pin To Net: NetName=NetC1_1 Pin=R?-1
+Add Pin To Net: Unknown Pin: Pin S?-1
+Add Pin To Net: Unknown Pin: Pin U-1
+Add Pin To Net: Unknown Pin: Pin U-1
+Add Pin To Net: Unknown Pin: Pin U-2
+Add Pin To Net: Unknown Pin: Pin U-2
+Add Pin To Net: Unknown Pin: Pin U-3
+Add Pin To Net: Unknown Pin: Pin U-3
+Add Pin To Net: Unknown Pin: Pin U-4
+Add Pin To Net: Unknown Pin: Pin U-4
+Add Pin To Net: Unknown Pin: Pin U-5
+Add Pin To Net: Unknown Pin: Pin U-5
+Add Pin To Net: Unknown Pin: Pin U-6
+Add Pin To Net: Unknown Pin: Pin U-7
+Add Pin To Net: Unknown Pin: Pin U-8
+Add Pin To Net: Unknown Pin: Pin U-9
+Add Pin To Net: Unknown Pin: Pin U-9
+Add Pin To Net: Unknown Pin: Pin U-10
+Add Pin To Net: Unknown Pin: Pin U-10
+Add Pin To Net: Unknown Pin: Pin U-11
+Add Pin To Net: Unknown Pin: Pin U-11
+Add Pin To Net: Unknown Pin: Pin U-12
+Add Pin To Net: Unknown Pin: Pin U-12
+Add Pin To Net: Unknown Pin: Pin U-13
+Add Pin To Net: Unknown Pin: Pin U-13
+Add Pin To Net: Unknown Pin: Pin U-14
+Add Pin To Net: Unknown Pin: Pin U-14
+Add Pin To Net: Unknown Pin: Pin U-15
+Add Pin To Net: Unknown Pin: Pin U-16
+Add Pin To Net: Unknown Pin: Pin X1-1
+Add Pin To Net: Unknown Pin: Pin X1-2
+Added Pin To Net: NetName=Net*_1 Pin=*-1
+Added Pin To Net: NetName=Net*_1 Pin=J1-33
+Added Net: Name=Net*_1
+Added Pin To Net: NetName=NetQ?_4 Pin=Q?-4
+Added Pin To Net: NetName=NetQ?_4 Pin=R?-2
+Added Net: Name=NetQ?_4
+Add Class Member: Failed to add class member : Component *1 Balance Connector
+Added Member To Class: ClassName=Jetson Nano Connector Member=Component * Servo Connector
+Add Class Member: Failed to add class member : Component B1 TPS54560BDDA
+Added Member To Class: ClassName=Power Supply Member=Component C1 Capacitor
+Add Class Member: Failed to add class member : Component D2 Shottky Diode
+Add Class Member: Failed to add class member : Component J7 LED Connector
+Add Class Member: Failed to add class member : Component L1 Inductor
+Add Class Member: Failed to add class member : Component Q8 BSS138W
+Added Member To Class: ClassName=Power Supply Member=Component Q? BUK6Y24-40PX
+Added Member To Class: ClassName=Power Supply Member=Component R? Resistor
+Add Class Member: Failed to add class member : Component S? Switch Normally Opened
+Add Class Member: Failed to add class member : Component U MCU-MCP3008-I/P(DIP16-7.62MM)
+Add Class Member: Failed to add class member : Component U MCP604-I/SL
+Add Class Member: Failed to add class member : Component X1 WSHP28184L000FEA
+Added Room: Name=ADC Module
+Added Room: Name=BMS
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control
