@@ -1,0 +1,36 @@
+Added Component: Designator=Q8(SOT65P210X110-3N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/BSS138W-D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BSS138W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-BSS138W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/BSS138W?qs=iQhsftLtcNQX02h325QGXg%3D%3D"; VariantName = "[No Variations]"
+Added Component: Designator=Q9(SOT65P210X110-3N)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.onsemi.com/pub/Collateral/BSS138W-D.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "1.1mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "onsemi"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "BSS138W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "512-BSS138W"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/onsemi-Fairchild/BSS138W?qs=iQhsftLtcNQX02h325QGXg%3D%3D"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin J7-1
+Add Pin To Net: Unknown Pin: Pin J7-2
+Add Pin To Net: Unknown Pin: Pin J7-3
+Add Pin To Net: Unknown Pin: Pin J7-4
+Added Pin To Net: NetName=NetQ8_1 Pin=Q8-1
+Added Pin To Net: NetName=GND Pin=Q8-2
+Added Pin To Net: NetName=NetQ8_3 Pin=Q8-3
+Added Pin To Net: NetName=NetQ8_3 Pin=Q9-1
+Added Pin To Net: NetName=NetQ1_4 Pin=Q9-2
+Added Pin To Net: NetName=GND Pin=Q9-3
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Class Member: Failed to add class member : Component J7 LED Connector
+Added Member To Class: ClassName=BMS Member=Component Q8 BSS138W
+Added Member To Class: ClassName=BMS Member=Component Q9 BSS138W
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened
+Added Room: Name=ADC Module
+Added Room: Name=Ballast Motor Control
+Added Room: Name=BMS
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control

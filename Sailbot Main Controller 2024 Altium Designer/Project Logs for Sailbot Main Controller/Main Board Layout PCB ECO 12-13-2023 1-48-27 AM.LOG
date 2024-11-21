@@ -1,0 +1,15 @@
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Added Pin To Net: NetName=NetJ2_8 Pin=J2-8
+Added Pin To Net: NetName=NetJ2_8 Pin=U1-34
+Added Net: Name=NetJ2_8
+Added Pin To Net: NetName=NetJ2_10 Pin=J2-10
+Added Pin To Net: NetName=NetJ2_10 Pin=U1-35
+Added Net: Name=NetJ2_10
+Added Pin To Net: NetName=NetJ2_32 Pin=J2-32
+Added Pin To Net: NetName=NetJ2_32 Pin=U1-6
+Added Net: Name=NetJ2_32
+Added Pin To Net: NetName=NetJ2_33 Pin=J2-33
+Added Pin To Net: NetName=NetJ2_33 Pin=U1-5
+Added Net: Name=NetJ2_33
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened

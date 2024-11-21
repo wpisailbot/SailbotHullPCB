@@ -1,0 +1,52 @@
+Removed Member From Class: ClassName=Status Light Control Member=Q9
+Added Component: Designator=J1(1333817)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.phoenixcontact.com/en-pc/products/pcb-terminal-block-lpta-16-2-100-zb-1333817"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "46.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1333817"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1333817"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1333817?qs=Jm2GQyTW%2Fbi%252BbQzIAqu7ww%3D%3D"; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Component: Footprint Not Found WSHP28184L000FEA
+Add Pin To Net: Unknown Pin: Pin *1-1
+Add Pin To Net: Unknown Pin: Pin *1-2
+Add Pin To Net: Unknown Pin: Pin *1-3
+Add Pin To Net: Unknown Pin: Pin *1-4
+Add Pin To Net: Unknown Pin: Pin *1-5
+Add Pin To Net: Unknown Pin: Pin D2-1
+Add Pin To Net: Unknown Pin: Pin D2-2
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-21
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-22
+Added Pin To Net: NetName=NetJ1_1 Pin=J1-23
+Add Pin To Net: Unknown Pin: Pin J7-1
+Add Pin To Net: Unknown Pin: Pin J7-2
+Add Pin To Net: Unknown Pin: Pin J7-3
+Add Pin To Net: Unknown Pin: Pin J7-4
+Add Pin To Net: Unknown Pin: Pin L1-1
+Add Pin To Net: Unknown Pin: Pin L1-2
+Add Pin To Net: Unknown Pin: Pin Q8-1
+Add Pin To Net: Unknown Pin: Pin Q8-2
+Add Pin To Net: Unknown Pin: Pin Q8-3
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Pin To Net: Unknown Pin: Pin X1-2
+Change Net Name : Old Net Name=NetJ1_1 New Net Name=NetJ1_21
+Added Pin To Net: NetName=NetJ1_11 Pin=J1-11
+Added Pin To Net: NetName=NetJ1_11 Pin=J1-12
+Added Pin To Net: NetName=NetJ1_11 Pin=J1-13
+Added Pin To Net: NetName=NetJ1_11 Pin=R28-1
+Added Net: Name=NetJ1_11
+Add Class Member: Failed to add class member : Component *1 Balance Connector
+Add Class Member: Failed to add class member : Component D2 Shottky Diode
+Added Member To Class: ClassName=Power Supply Member=Component J1 1333817
+Add Class Member: Failed to add class member : Component J7 LED Connector
+Add Class Member: Failed to add class member : Component L1 Inductor
+Add Class Member: Failed to add class member : Component Q8 BSS138W
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened
+Added Member To Class: ClassName=ADC Module Member=Component U MCU-MCP3008-I/P(DIP16-7.62MM)
+Add Class Member: Failed to add class member : Component X1 WSHP28184L000FEA
+Added Room: Name=ADC Module
+Added Room: Name=BMS
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control

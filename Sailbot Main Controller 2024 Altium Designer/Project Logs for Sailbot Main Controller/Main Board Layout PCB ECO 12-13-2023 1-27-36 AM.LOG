@@ -1,0 +1,19 @@
+Change Component Footprint: Designator=U1 Old Footprint=3 Pin 0.1in Header New Footprint=MODULE_ESP32-DEVKITC
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Added Pin To Net: NetName=NetU1_5 Pin=U1-5
+Added Pin To Net: NetName=NetU1_6 Pin=U1-6
+Added Pin To Net: NetName=NetJ4_1 Pin=U1-8
+Added Pin To Net: NetName=NetJ11_1 Pin=U1-9
+Added Pin To Net: NetName=NetJ14_1 Pin=U1-10
+Added Pin To Net: NetName=GND Pin=U1-11
+Added Pin To Net: NetName=GND Pin=U1-14
+Added Pin To Net: NetName=VCC5V0 Pin=U1-19
+Added Pin To Net: NetName=NetJ12_1 Pin=U1-23
+Added Pin To Net: NetName=NetJ5_1 Pin=U1-24
+Added Pin To Net: NetName=NetJ3_1 Pin=U1-26
+Added Pin To Net: NetName=GND Pin=U1-32
+Added Pin To Net: NetName=NetU1_34 Pin=U1-34
+Added Pin To Net: NetName=NetU1_35 Pin=U1-35
+Added Pin To Net: NetName=GND Pin=U1-38
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened

@@ -1,0 +1,18 @@
+Added Component: Designator=J11(1333817)
+Add component (AddParameter): Name = "Datasheet Link"; Value = "https://www.phoenixcontact.com/en-pc/products/pcb-terminal-block-lpta-16-2-100-zb-1333817"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Geometry.Height"; Value = "46.4mm"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Name"; Value = "Phoenix Contact"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer_Part_Number"; Value = "1333817"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Part Number"; Value = "651-1333817"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Phoenix-Contact/1333817?qs=Jm2GQyTW%2Fbi%252BbQzIAqu7ww%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=J11-11
+Added Pin To Net: NetName=GND Pin=J11-12
+Added Pin To Net: NetName=GND Pin=J11-13
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Added Pin To Net: NetName=+12 Pin=J11-21
+Added Pin To Net: NetName=+12 Pin=J11-22
+Added Pin To Net: NetName=+12 Pin=J11-23
+Added Net: Name=+12
+Added Class: Name=NMEA 2000 Power Connect
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened

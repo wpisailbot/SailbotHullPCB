@@ -1,0 +1,35 @@
+Added Component: Designator=J?(JST_B5B-XH-A)
+Add component (AddParameter): Name = "Check_prices"; Value = "https://www.snapeda.com/parts/B5B-XH-A/JST+Sales+America+Inc./view-part/?ref=eda"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MF"; Value = "JST Sales"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "MP"; Value = "B5B-XH-A"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Package"; Value = "None"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SnapEDA_Link"; Value = "https://www.snapeda.com/parts/B5B-XH-A/JST+Sales+America+Inc./view-part/?ref=snap"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Pin To Net: Unknown Pin: Pin J7-1
+Add Pin To Net: Unknown Pin: Pin J7-2
+Add Pin To Net: Unknown Pin: Pin J7-3
+Add Pin To Net: Unknown Pin: Pin J7-4
+Added Pin To Net: NetName=GND Pin=J?-1
+Added Pin To Net: NetName=NetJ?_2 Pin=J?-2
+Added Pin To Net: NetName=NetJ?_3 Pin=J?-3
+Added Pin To Net: NetName=NetJ?_4 Pin=J?-4
+Added Pin To Net: NetName=NetJ?_5 Pin=J?-5
+Add Pin To Net: Unknown Pin: Pin Q8-1
+Add Pin To Net: Unknown Pin: Pin Q8-2
+Add Pin To Net: Unknown Pin: Pin Q8-3
+Add Pin To Net: Unknown Pin: Pin Q?-1
+Add Pin To Net: Unknown Pin: Pin Q?-2
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Add Class Member: Failed to add class member : Component J7 LED Connector
+Added Member To Class: ClassName=BMS Member=Component J? B5B-XH-A
+Add Class Member: Failed to add class member : Component Q8 BSS138W
+Add Class Member: Failed to add class member : Component Q? BSS138W
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened
+Added Room: Name=ADC Module
+Added Room: Name=Ballast Motor Control
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control

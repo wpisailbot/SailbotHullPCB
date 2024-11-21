@@ -1,0 +1,48 @@
+Add Component: Footprint Not Found JST_B5B-XH-A
+Add Component: Footprint Not Found SOT95P230X110-3N
+Add Component: Footprint Not Found SOT95P230X110-3N
+Added Component: Designator=R?(6-0805_M)
+Add component (AddParameter): Name = "DTEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "SimulationGenericComponent"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "T_REL_LOCAL"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC1"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TC2"; Value = "0"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "TEMP"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "4.5k"; VariantName = "[No Variations]"
+Add Pin To Net: Unknown Pin: Pin J7-1
+Add Pin To Net: Unknown Pin: Pin J7-2
+Add Pin To Net: Unknown Pin: Pin J7-3
+Add Pin To Net: Unknown Pin: Pin J7-4
+Add Pin To Net: Unknown Pin: Pin J?-1
+Add Pin To Net: Unknown Pin: Pin J?-5
+Add Pin To Net: Unknown Pin: Pin Q8-1
+Add Pin To Net: Unknown Pin: Pin Q8-2
+Add Pin To Net: Unknown Pin: Pin Q?-2
+Added Pin To Net: NetName=Net*1_1 Pin=R?-2
+Add Pin To Net: Unknown Pin: Pin S1-1
+Add Pin To Net: Unknown Pin: Pin S1-2
+Change Net Name : Old Net Name=Net*1_1 New Net Name=NetJ?_5
+Added Pin To Net: NetName=NetJ?_2 Pin=R12-1
+Added Pin To Net: NetName=NetJ?_2 Pin=U-12
+Added Net: Name=NetJ?_2
+Added Pin To Net: NetName=NetJ?_3 Pin=R11-1
+Added Pin To Net: NetName=NetJ?_3 Pin=R19-2
+Added Net: Name=NetJ?_3
+Added Pin To Net: NetName=NetJ?_4 Pin=R10-1
+Added Pin To Net: NetName=NetJ?_4 Pin=R17-2
+Added Net: Name=NetJ?_4
+Added Pin To Net: NetName=NetQ8_3 Pin=R?-1
+Added Net: Name=NetQ8_3
+Add Class Member: Failed to add class member : Component J7 LED Connector
+Add Class Member: Failed to add class member : Component J? B5B-XH-A
+Add Class Member: Failed to add class member : Component Q8 BSS138W
+Add Class Member: Failed to add class member : Component Q? BSS138W
+Added Member To Class: ClassName=BMS Member=Component R? Resistor
+Add Class Member: Failed to add class member : Component S1 Switch Normally Opened
+Added Room: Name=ADC Module
+Added Room: Name=Ballast Motor Control
+Added Room: Name=BMS
+Added Room: Name=Jetson Nano Connector
+Added Room: Name=Power Supply
+Added Room: Name=Status Light Control
