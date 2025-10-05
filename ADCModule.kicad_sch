@@ -1,7 +1,7 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "78354353-a3e1-45cc-966c-07b4c751f26c")
 	(paper "A4")
 	(lib_symbols
@@ -93,17 +93,17 @@
 						(type background)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
+				(pin input line
+					(at -7.62 2.54 0)
 					(length 2.54)
-					(name "~"
+					(name "+"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "1"
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -129,17 +129,17 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
+				(pin output line
+					(at 7.62 0 180)
 					(length 2.54)
-					(name "+"
+					(name "~"
 						(effects
 							(font
 								(size 1.27 1.27)
 							)
 						)
 					)
-					(number "3"
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -247,24 +247,6 @@
 						)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
 				(pin input line
 					(at -7.62 -2.54 0)
 					(length 2.54)
@@ -276,6 +258,24 @@
 						)
 					)
 					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -354,24 +354,6 @@
 			)
 			(symbol "OPA4197xD_5_1"
 				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
 					(at -2.54 7.62 270)
 					(length 3.81)
 					(name "V+"
@@ -389,7 +371,26 @@
 						)
 					)
 				)
+				(pin power_in line
+					(at -2.54 -7.62 90)
+					(length 3.81)
+					(name "V-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "Analog_ADC:MCP3008"
 			(pin_names
@@ -462,6 +463,14 @@
 				)
 			)
 			(symbol "MCP3008_0_0"
+				(text "MUX"
+					(at -6.35 -1.27 900)
+					(effects
+						(font
+							(size 1.27 1.27)
+						)
+					)
+				)
 				(text "ADC"
 					(at -0.635 1.27 0)
 					(effects
@@ -479,19 +488,35 @@
 						(justify left bottom)
 					)
 				)
-				(text "MUX"
-					(at -6.35 -1.27 900)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
 			)
 			(symbol "MCP3008_0_1"
 				(polyline
 					(pts
+						(xy -7.62 8.89) (xy -7.62 -11.43) (xy -5.08 -10.16) (xy -5.08 7.62) (xy -7.62 8.89)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
 						(xy -3.81 1.27) (xy -5.08 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 3.175) (xy 1.905 -0.635) (xy -2.54 -0.635) (xy -3.81 1.27) (xy -2.54 3.175) (xy 1.905 3.175)
 					)
 					(stroke
 						(width 0)
@@ -515,31 +540,7 @@
 				)
 				(polyline
 					(pts
-						(xy -7.62 8.89) (xy -7.62 -11.43) (xy -5.08 -10.16) (xy -5.08 7.62) (xy -7.62 8.89)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 3.81 -3.175) (xy -3.81 -3.175) (xy -3.81 -11.43) (xy -6.35 -11.43) (xy -6.35 -10.795)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.905 3.175) (xy 1.905 -0.635) (xy -2.54 -0.635) (xy -3.81 1.27) (xy -2.54 3.175) (xy 1.905 3.175)
 					)
 					(stroke
 						(width 0)
@@ -584,132 +585,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -5.08 180)
-					(length 2.54)
-					(name "~{CS}/SHDN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at 15.24 -2.54 180)
-					(length 2.54)
-					(name "Din"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 15.24 0 180)
-					(length 2.54)
-					(name "Dout"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input clock
-					(at 15.24 2.54 180)
-					(length 2.54)
-					(name "CLK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -15.24 90)
-					(length 2.54)
-					(name "AGND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 12.7 270)
-					(length 2.54)
-					(name "Vref"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "15"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 5.08 12.7 270)
-					(length 2.54)
-					(name "Vdd"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "16"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -844,6 +719,60 @@
 					)
 				)
 				(pin power_in line
+					(at -2.54 12.7 270)
+					(length 2.54)
+					(name "Vref"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "15"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -2.54 -15.24 90)
+					(length 2.54)
+					(name "AGND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "14"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 5.08 12.7 270)
+					(length 2.54)
+					(name "Vdd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "16"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
 					(at 5.08 -15.24 90)
 					(length 2.54)
 					(name "DGND"
@@ -861,28 +790,103 @@
 						)
 					)
 				)
+				(pin input clock
+					(at 15.24 2.54 180)
+					(length 2.54)
+					(name "CLK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 15.24 0 180)
+					(length 2.54)
+					(name "Dout"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -2.54 180)
+					(length 2.54)
+					(name "Din"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 15.24 -5.08 180)
+					(length 2.54)
+					(name "~{CS}/SHDN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
 			)
+			(embedded_fonts no)
 		)
-		(symbol "Device:Opamp_Quad"
+		(symbol "Connector:Conn_01x03_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
+			(property "Reference" "J"
 				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
-			(property "Value" "Opamp_Quad"
+			(property "Value" "Conn_01x03_Pin"
 				(at 0 -5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -903,43 +907,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Quad operational amplifier"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Name" "kicad_builtin_opamp_quad"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "SUBCKT"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
+			(property "Description" "Generic connector, single row, 01x03, script generated"
 				(at 0 0 0)
 				(effects
 					(font
@@ -956,7 +924,7 @@
 					)
 				)
 			)
-			(property "ki_keywords" "quad opamp"
+			(property "ki_keywords" "connector"
 				(at 0 0 0)
 				(effects
 					(font
@@ -965,7 +933,7 @@
 					(hide yes)
 				)
 			)
-			(property "ki_fp_filters" "SOIC*3.9x8.7mm*P1.27mm* DIP*W7.62mm* TSSOP*4.4x5mm*P0.65mm* SSOP*5.3x6.2mm*P0.65mm*"
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
 				(at 0 0 0)
 				(effects
 					(font
@@ -974,23 +942,80 @@
 					(hide yes)
 				)
 			)
-			(symbol "Opamp_Quad_1_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
+			(symbol "Conn_01x03_Pin_1_1"
+				(rectangle
+					(start 0.8636 2.667)
+					(end 0 2.413)
 					(stroke
-						(width 0.254)
+						(width 0.1524)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type outline)
 					)
 				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(rectangle
+					(start 0.8636 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 2.54) (xy 0.8636 2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 0.8636 -2.54)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 2.54 180)
+					(length 3.81)
+					(name "Pin_1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1005,10 +1030,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_2"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1023,10 +1048,10 @@
 						)
 					)
 				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
+				(pin passive line
+					(at 5.08 -2.54 180)
+					(length 3.81)
+					(name "Pin_3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1042,251 +1067,12 @@
 					)
 				)
 			)
-			(symbol "Opamp_Quad_2_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Opamp_Quad_3_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Opamp_Quad_4_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "Opamp_Quad_5_1"
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "11"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
+			(embedded_fonts no)
 		)
 		(symbol "Device:R_US"
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
 				(offset 0)
 			)
@@ -1357,18 +1143,6 @@
 			(symbol "R_US_0_1"
 				(polyline
 					(pts
-						(xy 0 -2.286) (xy 0 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
 						(xy 0 2.286) (xy 0 2.54)
 					)
 					(stroke
@@ -1381,7 +1155,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
 					)
 					(stroke
 						(width 0)
@@ -1405,7 +1179,19 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
 					)
 					(stroke
 						(width 0)
@@ -1454,12 +1240,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+15V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1531,7 +1322,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1543,7 +1334,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1574,12 +1365,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:+5V"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1651,7 +1447,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 0) (xy 0 2.54)
+						(xy 0 2.54) (xy 0.762 1.27)
 					)
 					(stroke
 						(width 0)
@@ -1663,7 +1459,7 @@
 				)
 				(polyline
 					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
+						(xy 0 0) (xy 0 2.54)
 					)
 					(stroke
 						(width 0)
@@ -1694,12 +1490,17 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 		(symbol "power:GND"
 			(power)
-			(pin_numbers hide)
+			(pin_numbers
+				(hide yes)
+			)
 			(pin_names
-				(offset 0) hide)
+				(offset 0)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1790,13 +1591,24 @@
 					)
 				)
 			)
+			(embedded_fonts no)
 		)
 	)
+	(text "Old Ballast Pot"
+		(exclude_from_sim no)
+		(at 128.016 132.842 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "a2bf3a68-30bf-4d45-b9a3-624e7b3aa38b")
+	)
 	(junction
-		(at 62.23 83.82)
+		(at 137.16 177.8)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "123f8a2f-d5ba-425e-9311-e50dfcc72a43")
+		(uuid "1fe76035-cac4-4852-ad83-728efdd1d1a7")
 	)
 	(junction
 		(at 99.06 52.07)
@@ -1811,12 +1623,6 @@
 		(uuid "28dce4d4-ffcf-48b8-ac2a-af90b582ce21")
 	)
 	(junction
-		(at 62.23 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "355d2fc0-aedb-4acd-baf9-ee8dcf93c4f6")
-	)
-	(junction
 		(at 182.88 66.04)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1827,6 +1633,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "6d8f174b-6fa4-45a9-8324-e4cafb0f5f9b")
+	)
+	(junction
+		(at 137.16 148.59)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75af1bd9-3dfa-43b0-b558-ff0c28067c43")
 	)
 	(junction
 		(at 123.19 95.25)
@@ -1841,16 +1653,40 @@
 		(uuid "8082e444-633f-4edd-9c3c-dbf93ede55d2")
 	)
 	(junction
+		(at 140.97 158.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "850bed7b-9a19-4f91-999f-258653e67186")
+	)
+	(junction
+		(at 137.16 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8d191a02-3a3f-4a75-a580-2e9cbe89861a")
+	)
+	(junction
 		(at 93.98 92.71)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d943d1f-7899-4bba-8a3a-a25a479cfc86")
 	)
 	(junction
+		(at 140.97 146.05)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "906a5e9b-7422-4c3a-ab88-a6520e5666a6")
+	)
+	(junction
 		(at 99.06 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9423408f-0a69-459e-a5af-dbb274098d2d")
+	)
+	(junction
+		(at 62.23 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "96f7bb72-91be-42ea-b902-c541b9951358")
 	)
 	(junction
 		(at 99.06 76.2)
@@ -1862,13 +1698,13 @@
 		(at 62.23 107.95)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b7eeea72-116e-44eb-b275-6499bc6dc484")
+		(uuid "bed196f2-95ce-4183-9ef4-f7ea1da9359d")
 	)
 	(junction
-		(at 62.23 59.69)
+		(at 62.23 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bb0e89c7-1add-4f19-900b-656d4ce15848")
+		(uuid "c50205fe-e125-41dd-a3d6-8a5da5b03aff")
 	)
 	(junction
 		(at 123.19 46.99)
@@ -1895,6 +1731,18 @@
 		(uuid "e55153ea-f2bf-413e-9610-393f6bf5da9f")
 	)
 	(junction
+		(at 140.97 128.27)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e8fe15ac-5bc3-4d9b-b6c1-8dda87b2aa1f")
+	)
+	(junction
+		(at 62.23 59.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4c8bb81-0fa3-47d3-9cce-0927fdbe7607")
+	)
+	(junction
 		(at 93.98 44.45)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1919,6 +1767,26 @@
 			(type default)
 		)
 		(uuid "08bdab90-6395-491d-bcd6-a9f2b3d2864a")
+	)
+	(wire
+		(pts
+			(xy 132.08 177.8) (xy 137.16 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a15a75c-5938-41e9-9dcb-2ca03d81922f")
+	)
+	(wire
+		(pts
+			(xy 151.13 156.21) (xy 151.13 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a3fad9b-47e6-45eb-8ca9-213e3fc976af")
 	)
 	(wire
 		(pts
@@ -1959,6 +1827,16 @@
 			(type default)
 		)
 		(uuid "137d58ca-e069-46e1-821a-9ce362fa161d")
+	)
+	(wire
+		(pts
+			(xy 148.59 55.88) (xy 148.59 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "162c4e11-d55b-4977-98f7-91a7532c7414")
 	)
 	(wire
 		(pts
@@ -2092,6 +1970,26 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 158.75) (xy 132.08 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e3e3495-856d-4ef9-a3c0-a799e996478a")
+	)
+	(wire
+		(pts
+			(xy 140.97 146.05) (xy 140.97 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ecb592b-e511-4412-9fa5-4d6ba453fb33")
+	)
+	(wire
+		(pts
 			(xy 99.06 80.01) (xy 99.06 76.2)
 		)
 		(stroke
@@ -2122,6 +2020,26 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 161.29) (xy 137.16 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3c9b20e7-c57a-4911-9337-dfd647ba783c")
+	)
+	(wire
+		(pts
+			(xy 146.05 53.34) (xy 166.37 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3fb44e5e-9bef-4242-a4ed-72b0afd7f601")
+	)
+	(wire
+		(pts
 			(xy 39.37 105.41) (xy 46.99 105.41)
 		)
 		(stroke
@@ -2129,6 +2047,16 @@
 			(type default)
 		)
 		(uuid "43286c25-2064-452e-b0e2-0d0bfc9aa7fb")
+	)
+	(wire
+		(pts
+			(xy 132.08 125.73) (xy 146.05 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4432677a-0d16-4994-9074-f4324c62d998")
 	)
 	(wire
 		(pts
@@ -2182,6 +2110,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 175.26) (xy 140.97 175.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50867d70-96d4-4506-adbb-adc41166ee66")
+	)
+	(wire
+		(pts
 			(xy 137.16 45.72) (xy 166.37 45.72)
 		)
 		(stroke
@@ -2209,6 +2147,16 @@
 			(type default)
 		)
 		(uuid "5cf8e44d-062d-431b-883f-41637e5de475")
+	)
+	(wire
+		(pts
+			(xy 132.08 172.72) (xy 153.67 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5d1d2caf-fc5c-418c-8c35-552e628b16e7")
 	)
 	(wire
 		(pts
@@ -2372,6 +2320,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 156.21) (xy 151.13 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8058dd7b-47ab-4e52-b07a-915fc94a62a9")
+	)
+	(wire
+		(pts
 			(xy 62.23 107.95) (xy 76.2 107.95)
 		)
 		(stroke
@@ -2442,6 +2400,26 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 161.29) (xy 137.16 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8ccbf940-5b13-4e52-9f55-029e4479ba29")
+	)
+	(wire
+		(pts
+			(xy 132.08 148.59) (xy 137.16 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e260c28-ed7d-40a3-a203-ce97350c1659")
+	)
+	(wire
+		(pts
 			(xy 44.45 90.17) (xy 44.45 86.36)
 		)
 		(stroke
@@ -2459,6 +2437,16 @@
 			(type default)
 		)
 		(uuid "912c2f06-7975-47b5-ad68-7960417ecd90")
+	)
+	(wire
+		(pts
+			(xy 151.13 58.42) (xy 166.37 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91b694f1-ad7a-482e-90a7-598adc36cec5")
 	)
 	(wire
 		(pts
@@ -2522,6 +2510,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 143.51) (xy 148.59 143.51)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e9f3efa-15a0-4624-aa8b-438271c77ed1")
+	)
+	(wire
+		(pts
 			(xy 99.06 55.88) (xy 99.06 52.07)
 		)
 		(stroke
@@ -2539,6 +2537,46 @@
 			(type default)
 		)
 		(uuid "9f9423bc-a678-446c-ae48-76df64128786")
+	)
+	(wire
+		(pts
+			(xy 132.08 146.05) (xy 140.97 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a0f07c70-05eb-47c0-8cfa-a0edaf4e459b")
+	)
+	(wire
+		(pts
+			(xy 140.97 120.65) (xy 140.97 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a11936a7-d935-4a2b-9f12-ab54563eeb2a")
+	)
+	(wire
+		(pts
+			(xy 132.08 130.81) (xy 137.16 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a24eaa20-513e-40c5-9573-9e1c5f0cfd11")
+	)
+	(wire
+		(pts
+			(xy 140.97 128.27) (xy 140.97 146.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4a04708-8c3b-4866-a567-f1f95176c6bf")
 	)
 	(wire
 		(pts
@@ -2562,6 +2600,26 @@
 	)
 	(wire
 		(pts
+			(xy 137.16 177.8) (xy 137.16 181.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af46c018-da83-403f-b178-8a5868008b81")
+	)
+	(wire
+		(pts
+			(xy 137.16 148.59) (xy 137.16 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b089be5b-195e-46ca-86ab-4ee5d5ab4cc2")
+	)
+	(wire
+		(pts
 			(xy 82.55 76.2) (xy 76.2 76.2)
 		)
 		(stroke
@@ -2579,6 +2637,16 @@
 			(type default)
 		)
 		(uuid "b2e87f0c-1f14-417e-86cc-85b6a5816832")
+	)
+	(wire
+		(pts
+			(xy 137.16 130.81) (xy 137.16 148.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3a9a6ca-e61c-47bd-b880-d7668de9b145")
 	)
 	(wire
 		(pts
@@ -2652,6 +2720,16 @@
 	)
 	(wire
 		(pts
+			(xy 132.08 128.27) (xy 140.97 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c54dc61c-e6e5-4aa1-b513-0b6fc5215f4b")
+	)
+	(wire
+		(pts
 			(xy 93.98 43.18) (xy 93.98 44.45)
 		)
 		(stroke
@@ -2669,6 +2747,16 @@
 			(type default)
 		)
 		(uuid "cbd46489-1b8f-4639-938c-4df985042d56")
+	)
+	(wire
+		(pts
+			(xy 148.59 55.88) (xy 166.37 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd57b595-ee4c-48ad-ac64-bd078494b04a")
 	)
 	(wire
 		(pts
@@ -2712,6 +2800,16 @@
 	)
 	(wire
 		(pts
+			(xy 140.97 175.26) (xy 140.97 158.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5df800-f4b1-408f-983b-64448160983d")
+	)
+	(wire
+		(pts
 			(xy 99.06 97.79) (xy 102.87 97.79)
 		)
 		(stroke
@@ -2719,6 +2817,16 @@
 			(type default)
 		)
 		(uuid "dd11ca61-2404-4066-936c-3a3295c03ea0")
+	)
+	(wire
+		(pts
+			(xy 146.05 53.34) (xy 146.05 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de8672c1-ba38-4aa1-b46b-7294c8dde987")
 	)
 	(wire
 		(pts
@@ -2742,6 +2850,16 @@
 	)
 	(wire
 		(pts
+			(xy 153.67 60.96) (xy 153.67 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e69a476b-24e4-42ac-8e9e-a92b495e8272")
+	)
+	(wire
+		(pts
 			(xy 82.55 100.33) (xy 76.2 100.33)
 		)
 		(stroke
@@ -2759,6 +2877,16 @@
 			(type default)
 		)
 		(uuid "e71651d8-12b0-490c-8590-f59c803edef3")
+	)
+	(wire
+		(pts
+			(xy 153.67 60.96) (xy 166.37 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "edf3ecaf-83d3-4d3c-ab57-578476112573")
 	)
 	(wire
 		(pts
@@ -2839,16 +2967,6 @@
 			(type default)
 		)
 		(uuid "fece80e2-3a3f-4d5c-b423-054f864171d7")
-	)
-	(text "Servo Data [5-7]"
-		(exclude_from_sim no)
-		(at 154.432 57.404 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "4d628184-6f9c-4903-a34c-8f2b6a881b2d")
 	)
 	(global_label "V2"
 		(shape input)
@@ -3027,6 +3145,110 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:OPA4197xD")
+		(at 54.61 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0079932b-a1d1-459b-9054-40bf3b6d119b")
+		(property "Reference" "U13"
+			(at 54.61 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4197xD"
+			(at 54.61 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
+			(at 54.61 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18f")
+		)
+		(pin "8"
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d2086a")
+		)
+		(pin "11"
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bf")
+		)
+		(pin "12"
+			(uuid "eade56c9-6112-4083-948c-22c54c713a3b")
+		)
+		(pin "1"
+			(uuid "87f4104a-2b4d-492a-9dda-cf7cd07d8f96")
+		)
+		(pin "7"
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff56")
+		)
+		(pin "14"
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212ec")
+		)
+		(pin "2"
+			(uuid "bb23a261-35eb-45de-9cd3-aad142dbe4cc")
+		)
+		(pin "4"
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5f0")
+		)
+		(pin "5"
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f6")
+		)
+		(pin "9"
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a17")
+		)
+		(pin "3"
+			(uuid "20b4655b-f248-4cdc-80d1-78380963f1cb")
+		)
+		(pin "6"
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ed0")
+		)
+		(pin "13"
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb8b")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "U13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 182.88 35.56 0)
 		(unit 1)
@@ -3036,7 +3258,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "021177c8-e38f-414e-9cdc-dc580fa5f001")
-		(property "Reference" "#PWR017"
+		(property "Reference" "#PWR0101"
 			(at 182.88 39.37 0)
 			(effects
 				(font
@@ -3081,54 +3303,47 @@
 			)
 		)
 		(pin "1"
-			(uuid "39b6d25b-cd6a-4186-9124-633761604a00")
+			(uuid "3cb2c8e0-8fa6-4100-8d04-ba229887859f")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "#PWR017")
+					(reference "#PWR0101")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:Opamp_Quad")
-		(at 110.49 95.25 0)
-		(unit 3)
+		(lib_id "Amplifier_Operational:OPA4197xD")
+		(at 44.45 26.67 90)
+		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "03ac96bb-c356-46c6-b3f8-03ae04f27fad")
-		(property "Reference" "U2"
-			(at 110.49 85.09 0)
+		(uuid "0702ac8b-0af1-4fbc-9f54-0cbc9ff5f69f")
+		(property "Reference" "U13"
+			(at 43.1799 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "Opamp_Quad"
-			(at 110.49 87.63 0)
+		(property "Value" "OPA4197xD"
+			(at 45.7199 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 110.49 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 95.25 0)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3136,8 +3351,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad operational amplifier"
-			(at 110.49 95.25 0)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3145,89 +3360,62 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 110.49 95.25 0)
+		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
+			(at 44.45 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_quad"
-			(at 110.49 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 110.49 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
-			(at 110.49 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "ffdfd222-f440-4e93-b05b-4999779b5daa")
-		)
-		(pin "3"
-			(uuid "32200a5a-8ad9-4fe8-9c84-927b04838e40")
-		)
-		(pin "13"
-			(uuid "492dc7ab-4194-40c2-8cc6-6103724a4cbd")
-		)
-		(pin "2"
-			(uuid "e12ea96b-f4f3-4f61-b8c5-88656ef28872")
-		)
-		(pin "11"
-			(uuid "96f65a81-b703-4cdd-9ad4-2cc0c2bdac51")
-		)
-		(pin "9"
-			(uuid "4f32196e-773d-4c58-a68e-c503980a2c60")
 		)
 		(pin "10"
-			(uuid "298d0099-df31-460b-aac1-bd93ec0feb11")
-		)
-		(pin "4"
-			(uuid "7e68394e-8488-4651-a188-28d3768de905")
-		)
-		(pin "1"
-			(uuid "9e1507af-f660-4fc2-85e9-0915961d66ae")
-		)
-		(pin "6"
-			(uuid "170ed934-fbb5-4ce3-bb22-82bd0c340d2b")
-		)
-		(pin "5"
-			(uuid "45daa5a9-8c6c-4acd-9aa0-a79d65369f8b")
-		)
-		(pin "7"
-			(uuid "3125c535-f146-45ec-80a0-a96d9576ddfb")
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18d")
 		)
 		(pin "8"
-			(uuid "751c8ce9-518d-48d5-84fe-de001d523b1f")
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20868")
+		)
+		(pin "11"
+			(uuid "da8aaa24-fa18-49a4-8175-cc3869a83290")
+		)
+		(pin "12"
+			(uuid "eade56c9-6112-4083-948c-22c54c713a39")
+		)
+		(pin "1"
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4c")
+		)
+		(pin "7"
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff54")
 		)
 		(pin "14"
-			(uuid "e3d501c3-0c41-4996-a2b2-0140a8a4bc8d")
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212ea")
+		)
+		(pin "2"
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce93a")
+		)
+		(pin "4"
+			(uuid "665250d4-aa84-4b51-816c-2bc2d1c7ab10")
+		)
+		(pin "5"
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f4")
+		)
+		(pin "9"
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a15")
+		)
+		(pin "3"
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d592")
+		)
+		(pin "6"
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ece")
+		)
+		(pin "13"
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb89")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U2")
-					(unit 3)
+					(reference "U13")
+					(unit 5)
 				)
 			)
 		)
@@ -3287,7 +3475,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "32f8e1eb-ffbd-4092-b8de-1dba6809328b")
+			(uuid "14770bc6-69a4-4101-a1aa-5e05c8c654f1")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -3352,116 +3540,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "02a3058d-d8db-499c-90a8-6caecbb2dfd4")
+			(uuid "0e0f5162-0c13-43df-ba77-0962ec3c1da6")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
 					(reference "#PWR014")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OPA4197xD")
-		(at 54.61 59.69 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0e1cdee7-9a3e-45e8-b96c-685471dd8bc3")
-		(property "Reference" "U1"
-			(at 57.15 51.816 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA4197xD"
-			(at 57.15 54.356 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 54.61 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
-			(at 54.61 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
-			(at 54.61 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "10"
-			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18c")
-		)
-		(pin "8"
-			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20867")
-		)
-		(pin "11"
-			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bc")
-		)
-		(pin "12"
-			(uuid "eade56c9-6112-4083-948c-22c54c713a38")
-		)
-		(pin "1"
-			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4b")
-		)
-		(pin "7"
-			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff53")
-		)
-		(pin "14"
-			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212e9")
-		)
-		(pin "2"
-			(uuid "339b9598-ff63-4298-a0ae-565a273ce939")
-		)
-		(pin "4"
-			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ed")
-		)
-		(pin "5"
-			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f3")
-		)
-		(pin "9"
-			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a14")
-		)
-		(pin "3"
-			(uuid "5e424012-8b65-4ac5-8c44-df325340d591")
-		)
-		(pin "6"
-			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ecd")
-		)
-		(pin "13"
-			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb88")
-		)
-		(instances
-			(project ""
-				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U1")
-					(unit 2)
 				)
 			)
 		)
@@ -3519,154 +3604,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "162fafe1-24ba-4e3b-b2b4-391c163de661")
+			(uuid "f52a3246-77ad-49e0-bab0-5c608b1b0f22")
 		)
 		(pin "2"
-			(uuid "8c8defde-e441-4c94-8694-6acce7c37c1e")
+			(uuid "5adfe739-3267-43f0-9993-76dcc669c51c")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
 					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Opamp_Quad")
-		(at 110.49 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0eaa55d4-02d6-4f39-a110-fd37a9e43def")
-		(property "Reference" "U2"
-			(at 109.982 37.338 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Opamp_Quad"
-			(at 109.982 39.878 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad operational amplifier"
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_quad"
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
-			(at 110.49 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "ffdfd222-f440-4e93-b05b-4999779b5dab")
-		)
-		(pin "3"
-			(uuid "32200a5a-8ad9-4fe8-9c84-927b04838e41")
-		)
-		(pin "13"
-			(uuid "492dc7ab-4194-40c2-8cc6-6103724a4cbe")
-		)
-		(pin "2"
-			(uuid "e12ea96b-f4f3-4f61-b8c5-88656ef28873")
-		)
-		(pin "11"
-			(uuid "96f65a81-b703-4cdd-9ad4-2cc0c2bdac52")
-		)
-		(pin "9"
-			(uuid "4f32196e-773d-4c58-a68e-c503980a2c61")
-		)
-		(pin "10"
-			(uuid "298d0099-df31-460b-aac1-bd93ec0feb12")
-		)
-		(pin "4"
-			(uuid "7e68394e-8488-4651-a188-28d3768de906")
-		)
-		(pin "1"
-			(uuid "9e1507af-f660-4fc2-85e9-0915961d66af")
-		)
-		(pin "6"
-			(uuid "170ed934-fbb5-4ce3-bb22-82bd0c340d2c")
-		)
-		(pin "5"
-			(uuid "45daa5a9-8c6c-4acd-9aa0-a79d65369f8c")
-		)
-		(pin "7"
-			(uuid "3125c535-f146-45ec-80a0-a96d9576ddfc")
-		)
-		(pin "8"
-			(uuid "751c8ce9-518d-48d5-84fe-de001d523b20")
-		)
-		(pin "14"
-			(uuid "e3d501c3-0c41-4996-a2b2-0140a8a4bc8e")
-		)
-		(instances
-			(project ""
-				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -3726,13 +3672,13 @@
 			)
 		)
 		(pin "1"
-			(uuid "df561ba0-8233-4b44-a723-7daf0029f104")
+			(uuid "8129f9f0-3ec4-4a4d-8bdc-462387531176")
 		)
 		(pin "2"
-			(uuid "2772420f-1082-45ce-8263-b630c28f31e6")
+			(uuid "4246fc99-4782-4291-a463-05b95faaf400")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
 					(reference "R15")
 					(unit 1)
@@ -3742,34 +3688,32 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA4197xD")
-		(at 44.45 26.67 90)
-		(unit 5)
+		(at 110.49 46.99 0)
+		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "27d0d6d8-3106-4217-9eb9-dfcf9e366d84")
-		(property "Reference" "U1"
-			(at 43.1799 27.94 0)
+		(uuid "21ff32fe-605d-4233-a4fc-10f29b76921f")
+		(property "Reference" "U15"
+			(at 110.49 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Value" "OPA4197xD"
-			(at 45.7199 27.94 0)
+			(at 110.49 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 44.45 26.67 0)
+			(at 110.49 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3778,7 +3722,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
-			(at 44.45 26.67 0)
+			(at 110.49 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3787,7 +3731,7 @@
 			)
 		)
 		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
-			(at 44.45 26.67 0)
+			(at 110.49 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3796,192 +3740,52 @@
 			)
 		)
 		(pin "10"
-			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18c")
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb190")
 		)
 		(pin "8"
-			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20867")
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d2086b")
 		)
 		(pin "11"
-			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bc")
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6c0")
 		)
 		(pin "12"
-			(uuid "eade56c9-6112-4083-948c-22c54c713a38")
+			(uuid "eade56c9-6112-4083-948c-22c54c713a3c")
 		)
 		(pin "1"
-			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4b")
+			(uuid "31d3113c-9dc5-4ffc-855f-4dd5ac8177ba")
 		)
 		(pin "7"
-			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff53")
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff57")
 		)
 		(pin "14"
-			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212e9")
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212ed")
 		)
 		(pin "2"
-			(uuid "339b9598-ff63-4298-a0ae-565a273ce939")
+			(uuid "83fb8e29-4512-4a60-b988-05b00f2b4837")
 		)
 		(pin "4"
-			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ed")
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5f1")
 		)
 		(pin "5"
-			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f3")
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f7")
 		)
 		(pin "9"
-			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a14")
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a18")
 		)
 		(pin "3"
-			(uuid "5e424012-8b65-4ac5-8c44-df325340d591")
+			(uuid "f1841802-24dc-4633-8ffb-5d160d1567b9")
 		)
 		(pin "6"
-			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ecd")
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ed1")
 		)
 		(pin "13"
-			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb88")
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb8c")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U1")
-					(unit 5)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Opamp_Quad")
-		(at 110.49 71.12 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27ea7bc2-5173-4da2-9346-3d3b912385b7")
-		(property "Reference" "U2"
-			(at 110.49 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "Opamp_Quad"
-			(at 110.49 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Quad operational amplifier"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_quad"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
-			(at 110.49 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "ffdfd222-f440-4e93-b05b-4999779b5dac")
-		)
-		(pin "3"
-			(uuid "32200a5a-8ad9-4fe8-9c84-927b04838e42")
-		)
-		(pin "13"
-			(uuid "492dc7ab-4194-40c2-8cc6-6103724a4cbf")
-		)
-		(pin "2"
-			(uuid "e12ea96b-f4f3-4f61-b8c5-88656ef28874")
-		)
-		(pin "11"
-			(uuid "96f65a81-b703-4cdd-9ad4-2cc0c2bdac53")
-		)
-		(pin "9"
-			(uuid "4f32196e-773d-4c58-a68e-c503980a2c62")
-		)
-		(pin "10"
-			(uuid "298d0099-df31-460b-aac1-bd93ec0feb13")
-		)
-		(pin "4"
-			(uuid "7e68394e-8488-4651-a188-28d3768de907")
-		)
-		(pin "1"
-			(uuid "9e1507af-f660-4fc2-85e9-0915961d66b0")
-		)
-		(pin "6"
-			(uuid "170ed934-fbb5-4ce3-bb22-82bd0c340d2d")
-		)
-		(pin "5"
-			(uuid "45daa5a9-8c6c-4acd-9aa0-a79d65369f8d")
-		)
-		(pin "7"
-			(uuid "3125c535-f146-45ec-80a0-a96d9576ddfd")
-		)
-		(pin "8"
-			(uuid "751c8ce9-518d-48d5-84fe-de001d523b21")
-		)
-		(pin "14"
-			(uuid "e3d501c3-0c41-4996-a2b2-0140a8a4bc8f")
-		)
-		(instances
-			(project ""
-				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U2")
-					(unit 2)
+					(reference "U15")
+					(unit 1)
 				)
 			)
 		)
@@ -4040,7 +3844,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "e7ff0466-70a4-4a18-9d30-b1ab874456f2")
+			(uuid "16678aae-449a-45bb-b0b5-4118e6bc5cea")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4105,7 +3909,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "04a4e3b5-5d83-4a7c-a96d-e631b6a81653")
+			(uuid "271e69e4-3bfd-4201-9f66-8397c89071a1")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4118,32 +3922,34 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:OPA4197xD")
-		(at 54.61 83.82 0)
-		(unit 3)
+		(at 109.22 26.67 90)
+		(unit 5)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "36688a7b-d831-4cf0-8754-9872327ed39d")
-		(property "Reference" "U1"
-			(at 54.61 73.66 0)
+		(uuid "404cdb93-e375-4297-b09d-99f6d79274f4")
+		(property "Reference" "U15"
+			(at 107.9499 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Value" "OPA4197xD"
-			(at 54.61 76.2 0)
+			(at 110.4899 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 54.61 83.82 0)
+			(at 109.22 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4152,7 +3958,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
-			(at 54.61 83.82 0)
+			(at 109.22 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4161,7 +3967,7 @@
 			)
 		)
 		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
-			(at 54.61 83.82 0)
+			(at 109.22 26.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4170,84 +3976,68 @@
 			)
 		)
 		(pin "10"
-			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18c")
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18e")
 		)
 		(pin "8"
-			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20867")
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20869")
 		)
 		(pin "11"
-			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bc")
+			(uuid "649f280d-198b-48c3-9e8d-ce7c16d6fa91")
 		)
 		(pin "12"
-			(uuid "eade56c9-6112-4083-948c-22c54c713a38")
+			(uuid "eade56c9-6112-4083-948c-22c54c713a3a")
 		)
 		(pin "1"
-			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4b")
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4d")
 		)
 		(pin "7"
-			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff53")
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff55")
 		)
 		(pin "14"
-			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212e9")
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212eb")
 		)
 		(pin "2"
-			(uuid "339b9598-ff63-4298-a0ae-565a273ce939")
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce93b")
 		)
 		(pin "4"
-			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ed")
+			(uuid "fd0adeac-2385-44e2-bd48-829e8fbafa43")
 		)
 		(pin "5"
-			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f3")
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f5")
 		)
 		(pin "9"
-			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a14")
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a16")
 		)
 		(pin "3"
-			(uuid "5e424012-8b65-4ac5-8c44-df325340d591")
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d593")
 		)
 		(pin "6"
-			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ecd")
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ecf")
 		)
 		(pin "13"
-			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb88")
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb8a")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U1")
-					(unit 3)
+					(reference "U15")
+					(unit 5)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Amplifier_Operational:OPA4197xD")
-		(at 54.61 44.45 0)
+		(lib_id "power:+5V")
+		(at 140.97 120.65 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "530f914d-d7d2-46e4-a582-d1be07805781")
-		(property "Reference" "U1"
-			(at 54.61 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA4197xD"
-			(at 54.61 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 54.61 44.45 0)
+		(uuid "471b0ef6-4854-4dc0-b7c6-ae7e5ffe3a89")
+		(property "Reference" "#PWR030"
+			(at 140.97 124.46 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4255,8 +4045,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
-			(at 54.61 44.45 0)
+		(property "Value" "+5V"
+			(at 140.97 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 140.97 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4264,8 +4062,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
-			(at 54.61 44.45 0)
+		(property "Datasheet" ""
+			(at 140.97 120.65 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4273,52 +4071,93 @@
 				(hide yes)
 			)
 		)
-		(pin "10"
-			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18c")
-		)
-		(pin "8"
-			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20867")
-		)
-		(pin "11"
-			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bc")
-		)
-		(pin "12"
-			(uuid "eade56c9-6112-4083-948c-22c54c713a38")
+		(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(at 140.97 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
-			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4b")
-		)
-		(pin "7"
-			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff53")
-		)
-		(pin "14"
-			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212e9")
-		)
-		(pin "2"
-			(uuid "339b9598-ff63-4298-a0ae-565a273ce939")
-		)
-		(pin "4"
-			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ed")
-		)
-		(pin "5"
-			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f3")
-		)
-		(pin "9"
-			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a14")
-		)
-		(pin "3"
-			(uuid "5e424012-8b65-4ac5-8c44-df325340d591")
-		)
-		(pin "6"
-			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ecd")
-		)
-		(pin "13"
-			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb88")
+			(uuid "df8958a1-c64c-417c-a4e4-cf1771ded602")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U1")
+					(reference "#PWR030")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 127 146.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4db4d346-83b6-44d7-a055-79e4e0969fae")
+		(property "Reference" "J9"
+			(at 127.635 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 127.635 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 127 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b3067a0-aa89-4e80-84eb-f67b8f8a5ea6")
+		)
+		(pin "2"
+			(uuid "7f24fb6a-3e66-481e-9ed1-c2322647705f")
+		)
+		(pin "3"
+			(uuid "243933b4-8185-49cf-8a30-43dc8e52d15e")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -4379,12 +4218,83 @@
 			)
 		)
 		(pin "1"
-			(uuid "8651b49d-f232-48cc-9efc-bf0918e8c418")
+			(uuid "890a89bb-0ac6-45cb-905c-ebc64e8b5d07")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 127 175.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "560a9310-b6c1-4879-8542-8718a8897b45")
+		(property "Reference" "J5"
+			(at 127.635 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 127.635 170.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 127 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "932dd389-944d-42e7-a598-30120afe5cb2")
+		)
+		(pin "2"
+			(uuid "d7c400d8-b587-4d5c-9346-8e0d26e36988")
+		)
+		(pin "3"
+			(uuid "809239c8-86fa-4ad0-bb13-e5e4cde8d795")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -4444,10 +4354,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c48df9c0-920b-4b19-9569-dea0e64b56e9")
+			(uuid "f2f89184-567b-4583-ad6b-4ba2b6481c62")
 		)
 		(pin "2"
-			(uuid "3a518ae3-4b11-4ac6-aa66-5b1d468d5a3b")
+			(uuid "90fea6c7-8f67-4ec4-ad6d-14af1eee819d")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4468,7 +4378,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "68a6fad0-d111-4d96-bf9c-076b47ed45cb")
-		(property "Reference" "#PWR016"
+		(property "Reference" "#PWR0102"
 			(at 116.84 35.56 0)
 			(effects
 				(font
@@ -4513,13 +4423,117 @@
 			)
 		)
 		(pin "1"
-			(uuid "2729188c-7511-4f52-a037-996a8aa45424")
+			(uuid "2da65e5a-4c3d-45f8-8a8b-c68bbc2df0a4")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "#PWR016")
+					(reference "#PWR0102")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA4197xD")
+		(at 110.49 95.25 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6f47a305-2c5c-487b-bacc-952150d14790")
+		(property "Reference" "U15"
+			(at 110.49 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4197xD"
+			(at 110.49 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 110.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
+			(at 110.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
+			(at 110.49 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "7e4aff30-2b8a-467e-b4d3-3dfa94f92de4")
+		)
+		(pin "8"
+			(uuid "c46e23d2-3c16-48bf-8312-03dfc853c5a5")
+		)
+		(pin "11"
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6be")
+		)
+		(pin "12"
+			(uuid "eade56c9-6112-4083-948c-22c54c713a3d")
+		)
+		(pin "1"
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4e")
+		)
+		(pin "7"
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff58")
+		)
+		(pin "14"
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212ee")
+		)
+		(pin "2"
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce93c")
+		)
+		(pin "4"
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ef")
+		)
+		(pin "5"
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f8")
+		)
+		(pin "9"
+			(uuid "cb5f514e-0b1d-44c1-b618-8f6363e51901")
+		)
+		(pin "3"
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d594")
+		)
+		(pin "6"
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ed2")
+		)
+		(pin "13"
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb8d")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "U15")
+					(unit 3)
 				)
 			)
 		)
@@ -4578,10 +4592,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "048d3d25-cd31-4d39-86e6-fdd18efde0b8")
+			(uuid "b778bdb8-57f4-4a03-a589-a793444c9653")
 		)
 		(pin "2"
-			(uuid "dac0b64a-5655-4b41-a6a9-3ce403a85882")
+			(uuid "3697b49e-a30d-4efc-9bf8-89d41cd97961")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4646,10 +4660,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "bf959746-2219-4207-afb3-330cc2818780")
+			(uuid "4663e179-ee7a-46e7-bff0-b22385377ce6")
 		)
 		(pin "2"
-			(uuid "31deeacc-37fb-4d1b-b0d6-f28947c83fa7")
+			(uuid "63fb044d-f687-4866-851e-92207ee77d0e")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4661,34 +4675,137 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:Opamp_Quad")
-		(at 109.22 26.67 90)
-		(unit 5)
+		(lib_id "Amplifier_Operational:OPA4197xD")
+		(at 54.61 83.82 0)
+		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "7f2b4775-8ce1-4c46-a25a-fe1a26ee35b1")
-		(property "Reference" "U2"
-			(at 107.9499 27.94 0)
+		(fields_autoplaced yes)
+		(uuid "88832f60-d731-41f5-b821-28f19f4331f8")
+		(property "Reference" "U13"
+			(at 54.61 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "Opamp_Quad"
-			(at 110.49 26.162 0)
+		(property "Value" "OPA4197xD"
+			(at 54.61 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 54.61 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
+			(at 54.61 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
+			(at 54.61 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "df9c91a7-30b8-418a-a999-c64ba17cf641")
+		)
+		(pin "8"
+			(uuid "4e52408b-9391-4d9b-9230-7ffb350e6856")
+		)
+		(pin "11"
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6c1")
+		)
+		(pin "12"
+			(uuid "eade56c9-6112-4083-948c-22c54c713a3e")
+		)
+		(pin "1"
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4f")
+		)
+		(pin "7"
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff59")
+		)
+		(pin "14"
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212ef")
+		)
+		(pin "2"
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce93d")
+		)
+		(pin "4"
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5f2")
+		)
+		(pin "5"
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f9")
+		)
+		(pin "9"
+			(uuid "2a605ceb-86d3-4400-add0-58130cd5602a")
+		)
+		(pin "3"
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d595")
+		)
+		(pin "6"
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ed3")
+		)
+		(pin "13"
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb8e")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "U13")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 127 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9694074c-2563-4c4a-a929-d13b86a264a9")
+		(property "Reference" "J10"
+			(at 127.635 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 127.635 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(property "Footprint" ""
-			(at 109.22 26.67 0)
+			(at 127 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4697,7 +4814,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 109.22 26.67 0)
+			(at 127 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4705,98 +4822,95 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Quad operational amplifier"
-			(at 109.22 26.67 0)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 127 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Sim.Library" "${KICAD7_SYMBOL_DIR}/Simulation_SPICE.sp"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Name" "kicad_builtin_opamp_quad"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "SUBCKT"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=out1 2=in1- 3=in1+ 4=vcc 5=in2+ 6=in2- 7=out2 8=out3 9=in3- 10=in3+ 11=vee 12=in4+ 13=in4- 14=out4"
-			(at 109.22 26.67 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "ffdfd222-f440-4e93-b05b-4999779b5dad")
-		)
-		(pin "3"
-			(uuid "32200a5a-8ad9-4fe8-9c84-927b04838e43")
-		)
-		(pin "13"
-			(uuid "492dc7ab-4194-40c2-8cc6-6103724a4cc0")
-		)
-		(pin "2"
-			(uuid "e12ea96b-f4f3-4f61-b8c5-88656ef28875")
-		)
-		(pin "11"
-			(uuid "96f65a81-b703-4cdd-9ad4-2cc0c2bdac54")
-		)
-		(pin "9"
-			(uuid "4f32196e-773d-4c58-a68e-c503980a2c63")
-		)
-		(pin "10"
-			(uuid "298d0099-df31-460b-aac1-bd93ec0feb14")
-		)
-		(pin "4"
-			(uuid "7e68394e-8488-4651-a188-28d3768de908")
 		)
 		(pin "1"
-			(uuid "9e1507af-f660-4fc2-85e9-0915961d66b1")
+			(uuid "b0db4be9-9845-435a-a312-266b22695fdf")
 		)
-		(pin "6"
-			(uuid "170ed934-fbb5-4ce3-bb22-82bd0c340d2e")
+		(pin "2"
+			(uuid "b9decd62-7cac-4bed-a451-1ed33e5e3535")
 		)
-		(pin "5"
-			(uuid "45daa5a9-8c6c-4acd-9aa0-a79d65369f8e")
-		)
-		(pin "7"
-			(uuid "3125c535-f146-45ec-80a0-a96d9576ddfe")
-		)
-		(pin "8"
-			(uuid "751c8ce9-518d-48d5-84fe-de001d523b22")
-		)
-		(pin "14"
-			(uuid "e3d501c3-0c41-4996-a2b2-0140a8a4bc90")
+		(pin "3"
+			(uuid "94a0b6ad-ef21-4de5-afc6-bf7d7cd60830")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U2")
-					(unit 5)
+					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 137.16 181.61 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9c8c4cf2-b266-4e35-a14e-e152ab4db4a1")
+		(property "Reference" "#PWR031"
+			(at 137.16 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 137.16 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 137.16 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 137.16 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 137.16 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28a74353-10b3-409a-a5e7-608173aba0fd")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "#PWR031")
+					(unit 1)
 				)
 			)
 		)
@@ -4855,10 +4969,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "a4c5d7f1-b9c9-468d-9fe5-a2c2d97ea0b3")
+			(uuid "03f49c3f-9baf-45e7-a7ff-949be533df34")
 		)
 		(pin "2"
-			(uuid "bde336bd-3560-4e6b-b076-d5d4a62c111f")
+			(uuid "ca3452c6-9c67-48a1-9e2a-c1629209ea5e")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4922,10 +5036,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "3c56bdca-d424-45a8-901b-e7897fd04887")
+			(uuid "263f274c-ca10-42f7-9494-ab7da341464c")
 		)
 		(pin "2"
-			(uuid "168719f2-7291-4829-a247-44b5bcd994ed")
+			(uuid "09155298-02aa-4608-89de-72adaac818e7")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -4990,13 +5104,116 @@
 			)
 		)
 		(pin "1"
-			(uuid "0b225682-e78d-4003-a096-90b2f963c00c")
+			(uuid "bc618213-9db4-4a2a-85c7-a65dfb3ce5a2")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
 					(reference "#PWR012")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA4197xD")
+		(at 54.61 59.69 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bf05180e-df06-45f7-9767-791b826dc0bf")
+		(property "Reference" "U13"
+			(at 57.15 51.816 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4197xD"
+			(at 57.15 54.356 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 54.61 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
+			(at 54.61 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
+			(at 54.61 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18c")
+		)
+		(pin "8"
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20867")
+		)
+		(pin "11"
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bc")
+		)
+		(pin "12"
+			(uuid "eade56c9-6112-4083-948c-22c54c713a38")
+		)
+		(pin "1"
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4b")
+		)
+		(pin "7"
+			(uuid "bbf06ac0-b275-4ef7-83fd-3a6dacc53235")
+		)
+		(pin "14"
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212e9")
+		)
+		(pin "2"
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce939")
+		)
+		(pin "4"
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ed")
+		)
+		(pin "5"
+			(uuid "706b581c-da94-4068-938f-aebeb7ce65ad")
+		)
+		(pin "9"
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a14")
+		)
+		(pin "3"
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d591")
+		)
+		(pin "6"
+			(uuid "adfa5d56-5f10-4a3f-b16f-c2674a8047de")
+		)
+		(pin "13"
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb88")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "U13")
+					(unit 2)
 				)
 			)
 		)
@@ -5011,7 +5228,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "bf670dd0-38ea-4687-a9d9-146bf0555e7a")
-		(property "Reference" "U3"
+		(property "Reference" "U2"
 			(at 188.8841 35.56 0)
 			(effects
 				(font
@@ -5057,57 +5274,57 @@
 			)
 		)
 		(pin "3"
-			(uuid "5b5bfe44-caa6-4d69-85fc-02fe1c4ae150")
+			(uuid "5c09db98-e558-40e6-b135-6e090f2295b5")
 		)
 		(pin "9"
-			(uuid "3d079b85-ed9c-40e9-9db7-fba0dabaec3c")
+			(uuid "0e851dea-0806-4aa1-986b-10d35635ad6d")
 		)
 		(pin "7"
-			(uuid "06a21299-b960-4d4c-97f4-c6fefcd67662")
+			(uuid "f542f112-1e21-47d2-8696-400f121ffd80")
 		)
 		(pin "11"
-			(uuid "67566494-4a65-43e5-ad2d-60d0af2a95a3")
+			(uuid "f613efbf-0509-4226-9235-8418c698085f")
 		)
 		(pin "4"
-			(uuid "d8900a15-6a22-48fe-a4d0-f8076172e013")
+			(uuid "41faaf96-8d17-4464-a7f6-abb133ee6463")
 		)
 		(pin "13"
-			(uuid "dc7e6d81-86f9-444a-ba62-3e4383a971db")
+			(uuid "28e42973-9d90-4e5a-924e-c09726b882f7")
 		)
 		(pin "8"
-			(uuid "d4e124e3-3ec0-4338-acea-220f85fbf504")
+			(uuid "cd95289d-f319-4d21-8e33-761684a102bf")
 		)
 		(pin "16"
-			(uuid "77839e0e-7f19-4926-a78c-e6419b31e318")
+			(uuid "6c8d0369-1f1f-4dbf-92de-bb1dfa8a8fb1")
 		)
 		(pin "15"
-			(uuid "4c51ef17-3c4c-4d27-9ce4-af2fa401f98c")
+			(uuid "be6d281a-8f4a-4a80-813b-cc371954799e")
 		)
 		(pin "6"
-			(uuid "272171f0-b961-41db-aca7-4f56a8378fa7")
+			(uuid "d06c5277-681d-4414-a5bd-d67e554ee044")
 		)
 		(pin "1"
-			(uuid "ca166b45-1620-4f0d-9c09-d136c56c315c")
+			(uuid "19c1ed55-ff68-4ada-9969-b2103f10849a")
 		)
 		(pin "12"
-			(uuid "2210ba17-f125-44cf-95df-781c978401c5")
+			(uuid "1a4a8779-8116-4a34-9eb0-b51919e956cb")
 		)
 		(pin "10"
-			(uuid "00d2da18-b5d8-40a9-8684-883355b05472")
+			(uuid "caa3fe1f-a178-41d8-b4ea-5f8c94c86f1e")
 		)
 		(pin "2"
-			(uuid "9f22d1b5-4eac-44d2-949a-c9011714aac6")
+			(uuid "5c3c8bb5-811e-4006-b44e-dabce4e6af56")
 		)
 		(pin "14"
-			(uuid "e03a8fa7-4b81-44e7-9955-fef4254898e9")
+			(uuid "9cf80d05-ac83-480e-a778-e05f0d11768a")
 		)
 		(pin "5"
-			(uuid "b33f2125-cb40-4825-87df-09fec0294504")
+			(uuid "6b6f6a91-21ee-4f76-b402-f12305613abc")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U3")
+					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -5167,10 +5384,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "57a6011a-aff4-451a-afa7-15815ac6c419")
+			(uuid "9abe68bd-1d41-485e-b197-90f2cf9a4e83")
 		)
 		(pin "2"
-			(uuid "623f751d-c0dc-48ca-9161-548ce6f1bb22")
+			(uuid "2a321fed-6b6a-4795-a137-37946963821c")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -5235,15 +5452,86 @@
 			)
 		)
 		(pin "1"
-			(uuid "97ecfd9d-4fa7-4a72-8b04-5ea84c735285")
+			(uuid "5d55a6d9-0322-47e9-a96b-b2c96cda41df")
 		)
 		(pin "2"
-			(uuid "3e4d17db-35dd-4175-bfdb-3ab09dcfcb25")
+			(uuid "c4df1bde-b955-47fe-a7c8-373a6bda0840")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
 					(reference "R20")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x03_Pin")
+		(at 127 158.75 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d308b87d-eedf-46eb-9c50-7ed613e31f38")
+		(property "Reference" "J4"
+			(at 127.635 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Conn_01x03_Pin"
+			(at 127.635 153.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 127 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x03, script generated"
+			(at 127 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c8ea26aa-a4d8-43d4-84e7-3292e77dd520")
+		)
+		(pin "2"
+			(uuid "f243f744-e24f-4b4c-97b1-f3f7a2e608f1")
+		)
+		(pin "3"
+			(uuid "03adc686-9a37-4c14-98c2-2559576e874f")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "J4")
 					(unit 1)
 				)
 			)
@@ -5258,8 +5546,8 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d9082ff6-5c8a-4892-985a-07db8fdf484a")
-		(property "Reference" "U1"
+		(uuid "db3b3da5-31a8-4fb8-bd65-da5a7c088668")
+		(property "Reference" "U13"
 			(at 54.61 97.79 0)
 			(effects
 				(font
@@ -5303,51 +5591,51 @@
 			)
 		)
 		(pin "10"
-			(uuid "369b379b-58bd-4705-b600-2bd3e85cb18c")
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb191")
 		)
 		(pin "8"
-			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d20867")
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d2086c")
 		)
 		(pin "11"
-			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bc")
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6c2")
 		)
 		(pin "12"
-			(uuid "eade56c9-6112-4083-948c-22c54c713a38")
+			(uuid "8566c18c-ea41-41bc-bf95-0e079e09ea43")
 		)
 		(pin "1"
-			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa4b")
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa50")
 		)
 		(pin "7"
-			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff53")
+			(uuid "66f03fa0-63c3-4b4d-9864-a60b79f8ff5a")
 		)
 		(pin "14"
-			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212e9")
+			(uuid "d5ca73cb-a8d2-4861-8a40-05127c030ac7")
 		)
 		(pin "2"
-			(uuid "339b9598-ff63-4298-a0ae-565a273ce939")
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce93e")
 		)
 		(pin "4"
-			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ed")
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5f3")
 		)
 		(pin "5"
-			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2f3")
+			(uuid "ad408ac1-7a41-487e-84dd-1c615f93a2fa")
 		)
 		(pin "9"
-			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a14")
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a19")
 		)
 		(pin "3"
-			(uuid "5e424012-8b65-4ac5-8c44-df325340d591")
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d596")
 		)
 		(pin "6"
-			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ecd")
+			(uuid "9afd3d7a-df32-4cff-9d68-2f9609805ed4")
 		)
 		(pin "13"
-			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb88")
+			(uuid "085ad836-4546-45b6-a45b-388ea5d00698")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "U1")
+					(reference "U13")
 					(unit 4)
 				)
 			)
@@ -5406,10 +5694,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "92ea4d20-9538-4e95-8a2e-5b61c7a6665a")
+			(uuid "1aa151c6-f8e2-4b4f-a295-8f08da9be401")
 		)
 		(pin "2"
-			(uuid "78783ade-1032-4cc2-8037-5509fb464611")
+			(uuid "2d5ee11d-e702-4db3-a3d8-5c1892d15088")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -5474,10 +5762,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "c9aa6d3a-3a07-47d7-810e-e301e1a376fd")
+			(uuid "8a48bd94-c32d-4eff-a0a4-bf90a8c9c26a")
 		)
 		(pin "2"
-			(uuid "d38b3fdc-562c-465f-8935-532236f0f796")
+			(uuid "906cb783-05c4-4fdc-907a-46aabf172354")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -5541,10 +5829,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6400d7d-d9b4-436a-aac5-ef47230723ea")
+			(uuid "a6a7a15f-f480-4725-8703-59e34563f5cc")
 		)
 		(pin "2"
-			(uuid "bcd31855-eebb-4f8e-b0ee-6a877e418daf")
+			(uuid "61d5a6c7-e1c4-4819-ad73-d327f9d93297")
 		)
 		(instances
 			(project "SailbotMainCircuitBoard"
@@ -5565,7 +5853,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f35dd1c3-0833-402e-aaf7-3b6a4a6363fb")
-		(property "Reference" "#PWR015"
+		(property "Reference" "#PWR0103"
 			(at 101.6 33.02 0)
 			(effects
 				(font
@@ -5610,13 +5898,116 @@
 			)
 		)
 		(pin "1"
-			(uuid "7fe4bed1-8140-4464-9507-0c2ca295dca0")
+			(uuid "c1c67a5f-9824-405f-9e7b-f3c54410d21f")
 		)
 		(instances
-			(project ""
+			(project "SailbotMainCircuitBoard"
 				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
-					(reference "#PWR015")
+					(reference "#PWR0103")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:OPA4197xD")
+		(at 110.49 71.12 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f5165011-b72f-48d5-98de-a736f2cb72ff")
+		(property "Reference" "U15"
+			(at 113.03 63.246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA4197xD"
+			(at 113.03 65.786 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(at 110.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/opa4197.pdf"
+			(at 110.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Quad 36V, Precision, Rail-to-Rail Input/Output, Low Offset Voltage, Operational Amplifier, SOIC-14"
+			(at 110.49 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "10"
+			(uuid "369b379b-58bd-4705-b600-2bd3e85cb192")
+		)
+		(pin "8"
+			(uuid "138fbaf4-4c6f-4f5e-85fc-5a3455d2086d")
+		)
+		(pin "11"
+			(uuid "7db475dd-98a6-4035-b426-2e9fd8deb6bd")
+		)
+		(pin "12"
+			(uuid "eade56c9-6112-4083-948c-22c54c713a3f")
+		)
+		(pin "1"
+			(uuid "4bb449ee-e9e8-48d6-83ca-1ecfeb53fa51")
+		)
+		(pin "7"
+			(uuid "8acc5b77-cb9a-49df-8eca-7e3c81ef349b")
+		)
+		(pin "14"
+			(uuid "c21e9abf-c529-48f5-9fb3-2475da3212f0")
+		)
+		(pin "2"
+			(uuid "339b9598-ff63-4298-a0ae-565a273ce93f")
+		)
+		(pin "4"
+			(uuid "0135bfd5-1271-415e-bec2-2b1b54f3c5ee")
+		)
+		(pin "5"
+			(uuid "a218ba5a-f044-4f4c-8370-897e7c9fbd6d")
+		)
+		(pin "9"
+			(uuid "50f5ba4a-dbb8-486b-8803-92f34d790a1a")
+		)
+		(pin "3"
+			(uuid "5e424012-8b65-4ac5-8c44-df325340d597")
+		)
+		(pin "6"
+			(uuid "3c652e17-d816-4ae1-95f9-44294fd83ff1")
+		)
+		(pin "13"
+			(uuid "600b20fb-0649-4de8-b7de-cea10e97fb8f")
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b/8d34017c-8f63-4dbd-80eb-8ba1ce0a18b5"
+					(reference "U15")
+					(unit 2)
 				)
 			)
 		)

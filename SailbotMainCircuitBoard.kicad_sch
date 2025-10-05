@@ -1,10 +1,80 @@
 (kicad_sch
-	(version 20231120)
+	(version 20250114)
 	(generator "eeschema")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(uuid "2c408d87-f9c6-45ed-9dde-d357fc7ad88b")
 	(paper "A4")
 	(lib_symbols)
+	(text "Main 5V Output"
+		(exclude_from_sim no)
+		(at 116.586 100.076 0)
+		(effects
+			(font
+				(size 2.54 2.54)
+			)
+		)
+		(uuid "768c8be7-b008-4279-b27e-6a22b374edce")
+	)
+	(wire
+		(pts
+			(xy 161.29 49.53) (xy 163.83 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "050272e2-86d2-4a10-a2f9-109905352492")
+	)
+	(wire
+		(pts
+			(xy 110.49 63.5) (xy 127 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0aebd5e6-abb3-44ea-aff4-7da4ff56f013")
+	)
+	(wire
+		(pts
+			(xy 161.29 60.96) (xy 163.83 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2aa7f378-1447-47fc-be47-ad7bdeedc6ef")
+	)
+	(wire
+		(pts
+			(xy 161.29 45.72) (xy 163.83 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "37fdab08-c7c8-4f81-9da9-42fcc99b9a24")
+	)
+	(wire
+		(pts
+			(xy 110.49 60.96) (xy 127 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "50d311a7-f0f7-4c59-8f9a-15f904954b4c")
+	)
+	(wire
+		(pts
+			(xy 161.29 55.88) (xy 163.83 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "52c382e3-05d7-45ba-b21c-48bb4cf6a25a")
+	)
 	(wire
 		(pts
 			(xy 54.61 46.99) (xy 83.82 46.99)
@@ -27,6 +97,16 @@
 	)
 	(wire
 		(pts
+			(xy 110.49 68.58) (xy 127 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a1fa54fe-ddf3-4675-90c2-ece15d7f7639")
+	)
+	(wire
+		(pts
 			(xy 54.61 52.07) (xy 83.82 52.07)
 		)
 		(stroke
@@ -44,6 +124,16 @@
 			(type default)
 		)
 		(uuid "d2da8396-b008-4f32-8dc2-b8d8f4c99d04")
+	)
+	(wire
+		(pts
+			(xy 110.49 66.04) (xy 127 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4139e62-bc93-4851-a07b-3a5a474df77b")
 	)
 	(global_label "V4"
 		(shape output)
@@ -89,6 +179,94 @@
 			)
 		)
 	)
+	(global_label "TX Jetson"
+		(shape output)
+		(at 161.29 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "32c05931-dc0d-4d62-8bfe-38c9031a26a3")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 149.0521 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RX Jetson"
+		(shape output)
+		(at 163.83 55.88 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "414eef8f-bd10-4792-b128-9cfdcceec11c")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.3703 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RX Jetson"
+		(shape input)
+		(at 161.29 55.88 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "55270c13-7b7a-4eb5-b99a-94d7ef651191")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 148.7497 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Hardware Interrupt 1"
+		(shape input)
+		(at 163.83 45.72 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "612eecf7-e57e-4798-8a31-5c8b5295e7e9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8931 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
 	(global_label "V3"
 		(shape output)
 		(at 54.61 49.53 0)
@@ -102,6 +280,72 @@
 		(uuid "65fc5618-efa2-4f82-91be-087026d0feb0")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 59.8933 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "TX Jetson"
+		(shape input)
+		(at 163.83 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "7a534cdd-3788-459d-b49f-47fb8d325cf5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 176.0679 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Hardware Interrupt 2"
+		(shape output)
+		(at 161.29 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "7bd98b16-7fdc-4bf1-9006-c7d19b235835")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.2269 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Hardware Interrupt 2"
+		(shape input)
+		(at 163.83 49.53 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "804fec67-d2f4-4638-9abc-19a00a30dc55")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 186.8931 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -129,6 +373,160 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS ADC"
+		(shape input)
+		(at 110.49 68.58 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "9476aafa-c88d-426e-a649-236ad7b74ba9")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 100.4291 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "Hardware Interrupt 1"
+		(shape output)
+		(at 161.29 45.72 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "97415f17-3861-4d8e-a973-5b912c160788")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 138.2269 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCLK ADC"
+		(shape output)
+		(at 110.49 60.96 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ae996391-c620-4620-bd20-d56f4c349766")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.131 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "SCLK ADC"
+		(shape output)
+		(at 127 60.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "be363aa3-12b2-4a95-8601-7202121c2cd7")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.359 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI ADC"
+		(shape input)
+		(at 110.49 66.04 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c0aecc3c-bcec-40d5-8f6d-32344be88354")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.3124 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MISO ADC"
+		(shape input)
+		(at 127 63.5 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ccb10424-8fd4-4ca3-b64b-970af461861b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.1776 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MISO ADC"
+		(shape output)
+		(at 110.49 63.5 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "d257e103-e94a-4879-bbef-90abeeea16a0")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 98.3124 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 				(hide yes)
 			)
 		)
@@ -173,6 +571,50 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "CS ADC"
+		(shape output)
+		(at 127 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e982f04d-9795-40b7-8bf3-e7a3ceeac609")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 137.0609 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "MOSI ADC"
+		(shape output)
+		(at 127 66.04 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef0d41c3-1a1f-4300-943b-3664cf2db5dd")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 139.1776 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 				(hide yes)
 			)
 		)
@@ -222,8 +664,54 @@
 		)
 	)
 	(sheet
+		(at 97.79 88.9)
+		(size 39.37 43.18)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "481c2fb0-8b92-4381-b20c-a7e5f62f3d2a")
+		(property "Sheetname" "5VConverter"
+			(at 97.79 88.1884 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "5VConverter.kicad_sch"
+			(at 97.79 132.6646 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b"
+					(page "6")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 19.05 36.83)
 		(size 40.64 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -260,8 +748,96 @@
 		)
 	)
 	(sheet
+		(at 187.96 105.41)
+		(size 40.64 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7622f9e2-c99f-49d5-a2bd-6a59d4b398d3")
+		(property "Sheetname" "ADC_Module2"
+			(at 187.96 104.6984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ADC_Module2.kicad_sch"
+			(at 187.96 136.4746 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 127 36.83)
+		(size 34.29 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "7c4058df-94cd-4e56-866a-6ef9bf54c920")
+		(property "Sheetname" "JetsonOrinNano"
+			(at 127 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "JetsonOrinNano.kicad_sch"
+			(at 127 79.3246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 78.74 36.83)
 		(size 31.75 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
 		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
@@ -297,9 +873,52 @@
 			)
 		)
 	)
+	(sheet
+		(at 163.83 36.83)
+		(size 46.99 41.91)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "8d71382d-8702-40ef-abd3-a2bd8a107006")
+		(property "Sheetname" "ESP32 Coprocessor"
+			(at 163.83 36.1184 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ESP32_Coprocessor.kicad_sch"
+			(at 163.83 79.3246 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SailbotMainCircuitBoard"
+				(path "/2c408d87-f9c6-45ed-9dde-d357fc7ad88b"
+					(page "5")
+				)
+			)
+		)
+	)
 	(sheet_instances
 		(path "/"
 			(page "1")
 		)
 	)
+	(embedded_fonts no)
 )
